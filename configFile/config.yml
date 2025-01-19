@@ -1,0 +1,72 @@
+exchanges:
+  auth:
+    ftx:
+      exchangeName: FTX
+      apiKey: "eUiOSuFzzsJ8BkJApWQw41XHVLBVD5r4xVwNwx3E"
+      secret: "4IPyKCfZ6QZiOezSKpedSJW7zQvDzC-6mTxINaAP"
+      enabled: True
+      count: 2
+      intervalSeconds: 0.2
+      publishLevels: 20
+      log: False
+      subaccount: Sub1
+      currenciesFile: "/Users/yashdeshwal/workspace/dwf-trading-infra/currencies/ftx.yaml"
+      publishOnTopOnly: True
+      ob: True
+  md:
+    ftx:
+      enabled: True
+      currenciesFile: "/Users/yashdeshwal/workspace/dwf-trading-infra/currencies/ftx.yaml"
+      publishOnTopOnly: True
+      ob: True
+      arb: False
+  strategies:
+    TWAP:
+      BTC:
+        btc_usdt_spot_ftx:
+          symbol: BTC/USDT
+          tickSize: 1.0
+          minOrderSize: 0.0001
+          lotSize: 0.0001
+          contractSize: 1
+          isLinear: true
+          maxOrderSize: 99999999
+          rebate: 0.01
+          type: SPOT
+          base: BTC
+          quote: USDT
+          margin: USD
+          perOrderSize: 0.000001
+      ETHUSDT:
+        eth_usdt_spot_ftx:
+          symbol: ETH/USDT
+          tickSize: 0.1
+          minOrderSize: 0.002
+          lotSize: 0.001
+          contractSize: 1
+          isLinear: true
+          maxOrderSize: 99999999
+          rebate: 0.01
+          perOrderSize: 0.0001
+      ETH:
+        eth_usd_spot_ftx:
+          symbol: ETH/USD
+          tickSize: 0.1
+          minOrderSize: 0.01
+          lotSize: 0.001
+          contractSize: 1
+          isLinear: true
+          maxOrderSize: 99999999
+          rebate: 0.01
+          perOrderSize: 0.1
+      USDT:
+        usdt_usd_spot_ftx:
+          symbol: USDT/USD
+          tickSize: 0.0001
+          minOrderSize: 0.01
+          lotSize: 0.01
+          contractSize: 1
+          isLinear: true
+          maxOrderSize: 99999999
+          rebate: 0.01
+          perOrderSize: 100.0

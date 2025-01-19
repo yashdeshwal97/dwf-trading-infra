@@ -1,0 +1,81 @@
+FTX:
+  1inch_ftx:
+    symbol: 1INCH-PERP
+    tickSize: 0.0001
+    minOrderSize: 1.0
+    lotSize: 1.0
+    contractSize: 1
+    isLinear: true
+    maxOrderSize: 99999999
+    rebate: 0.01
+    type: PERPETUAL
+    base: 1INCH
+    quote: PERP
+    margin: USDT
+  usdt_ftx:
+    symbol: USDT-PERP
+    tickSize: 0.0001
+    minOrderSize: 1.0
+    lotSize: 1.0
+    contractSize: 1
+    isLinear: true
+    maxOrderSize: 99999999
+    rebate: 0.01
+    type: PERPETUAL
+    base: USDT
+    quote: PERP
+    margin: USD
+  usdt_usd_spot_ftx:
+    symbol: USDT/USD
+    tickSize: 0.0001
+    minOrderSize: 0.01
+    lotSize: 0.01
+    contractSize: 1
+    isLinear: true
+    maxOrderSize: 99999999
+    rebate: 0.01
+    type: SPOT
+    base: USDT
+    quote: USD
+    margin: USD
+  btc_usdt_spot_ftx:
+    symbol: BTC/USDT
+    tickSize: 1.0
+    minOrderSize: 0.0001
+    lotSize: 0.0001
+    contractSize: 1
+    isLinear: true
+    maxOrderSize: 99999999
+    rebate: 0.01
+    type: SPOT
+    base: BTC
+    quote: USDT
+    margin: USD
+  eth_usdt_spot_ftx:
+    symbol: ETH/USDT
+    tickSize: 0.1
+    minOrderSize: 0.001
+    lotSize: 0.001
+    contractSize: 1
+    isLinear: true
+    maxOrderSize: 99999999
+    rebate: 0.01
+    type: SPOT
+    base: ETH
+    quote: USDT
+    margin: USD
+  eth_usd_spot_ftx:
+    symbol: ETH/USD
+    tickSize: 0.1
+    minOrderSize: 0.001
+    lotSize: 0.001
+    contractSize: 1
+    basecurrency: ETH
+    quotecurrency: USD
+    isLinear: true
+    maxOrderSize: 99999999
+    rebate: 0.01
+    type: SPOT
+    base: ETH
+    quote: USD
+    margin: USD
